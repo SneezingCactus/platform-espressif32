@@ -15,11 +15,13 @@
 # Python Version Check
 import sys
 
-if not ((3, 10) <= sys.version_info < (3, 14)):
-    print("ERROR: Python version must be between 3.10 and 3.13.", file=sys.stderr)
-    print(f"Current Python version: {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}", file=sys.stderr)
-    print("Supported versions: 3.10, 3.11, 3.12, 3.13", file=sys.stderr)
-    raise SystemExit(1)
+# No
+
+#if not ((3, 10) <= sys.version_info < (3, 14)):
+#    print("ERROR: Python version must be between 3.10 and 3.13.", file=sys.stderr)
+#    print(f"Current Python version: {sys.version_info.major}.{sys.version_info.minor}.{sys.version_info.micro}", file=sys.stderr)
+#    print("Supported versions: 3.10, 3.11, 3.12, 3.13", file=sys.stderr)
+#    raise SystemExit(1)
 
 # LZMA support check
 try:
